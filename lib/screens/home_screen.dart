@@ -54,7 +54,6 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
       body: SafeArea(
         child: Column(
           children: [
-            // Кнопка подключения с анимацией
             ConnectionCard(
               isConnected: _isConnected,
               onTap: () {
@@ -65,7 +64,6 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
               pulseController: _pulseController,
             ),
             const SizedBox(height: 20),
-            // Список серверов с анимацией появления
             Expanded(
               child: ListView.builder(
                 padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -83,7 +81,6 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
                 },
               ),
             ),
-            // Кнопка обновления подписки
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: Row(
