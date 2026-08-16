@@ -29,7 +29,6 @@ class _SettingsScreenState extends State<SettingsScreen> {
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
-          // Тема
           SwitchListTile(
             title: const Text('Тёмная тема'),
             subtitle: const Text('Изменить оформление приложения'),
@@ -38,8 +37,6 @@ class _SettingsScreenState extends State<SettingsScreen> {
             secondary: const Icon(Icons.dark_mode),
           ),
           const Divider(),
-
-          // Автообновление
           SwitchListTile(
             title: const Text('Автообновление подписок'),
             subtitle: const Text('Обновлять каждый час'),
@@ -48,8 +45,6 @@ class _SettingsScreenState extends State<SettingsScreen> {
             secondary: const Icon(Icons.update),
           ),
           const Divider(),
-
-          // Уведомления
           SwitchListTile(
             title: const Text('Уведомления'),
             subtitle: const Text('Показывать уведомления о статусе'),
@@ -58,8 +53,6 @@ class _SettingsScreenState extends State<SettingsScreen> {
             secondary: const Icon(Icons.notifications_active),
           ),
           const Divider(),
-
-          // Ползунок порога пинга
           ListTile(
             leading: const Icon(Icons.speed),
             title: const Text('Максимальный пинг (мс)'),
@@ -77,8 +70,6 @@ class _SettingsScreenState extends State<SettingsScreen> {
             ),
           ),
           const Divider(),
-
-          // Интервал обновления
           ListTile(
             leading: const Icon(Icons.timer),
             title: const Text('Интервал обновления (ч)'),
@@ -96,8 +87,6 @@ class _SettingsScreenState extends State<SettingsScreen> {
             ),
           ),
           const Divider(),
-
-          // Кнопка сброса
           Center(
             child: TextButton.icon(
               onPressed: () {
